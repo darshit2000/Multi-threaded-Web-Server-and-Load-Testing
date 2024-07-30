@@ -10,8 +10,8 @@
 #include <sys/stat.h>
 #include <signal.h>
 #include <time.h>
-#include "serverHelperFunctions.c"
-#include "interuptHandler.c"
+#include "serverHelperFunctions.h"
+#include "interuptHandler.h"
 
 int main(int argc, char const* argv[]){
     struct sockaddr_in addr;

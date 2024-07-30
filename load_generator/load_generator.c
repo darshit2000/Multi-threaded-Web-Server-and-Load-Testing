@@ -6,7 +6,7 @@
 #include <pthread.h>
 #include <sys/time.h>
 #include <arpa/inet.h>
-#include "loadGenHelperFunctions.c"
+#include "loadGenHelperFunctions.h"
 
 int main(int argc, char *argv[]) {
 	long user_count; 

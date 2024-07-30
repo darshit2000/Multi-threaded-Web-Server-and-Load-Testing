@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "serverVariables.c"
+#include "serverVariables.h"
 
 int isSuccess(int fd, char *msg);
 char *readFileContent(char url[]);
@@ -36,6 +36,7 @@ int isSuccess(int fd, char *msg) {
 char *readFileContent(char url[]){
     struct stat sb;
     char *data = (char *)malloc(BUFFER_SIZE*sizeof(char));
+    bzero(data, BUFFER_SIZE);
     FILE* file = fopen(url, "r");
 
     if (file == NULL) {

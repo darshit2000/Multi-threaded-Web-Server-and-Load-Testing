@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "loadGenVariables.c"
+#include "loadGenVariables.h"
 
 int isSuccess(int fd, char *msg);
 void *threadFunction(void *arg);
