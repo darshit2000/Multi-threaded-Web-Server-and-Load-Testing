@@ -26,15 +26,15 @@ Components and their features
 Source Code Structure
 --------
 * `server/http_server_with_thread_pool.c` : Main source file containing the code to start the web server.
-* `server/serverHelperFunctions.c` : Contains the various helper functions that the main source file of the web server will call.
-* `server/interuptHandler.c` : Contains code to handle interupts.
-* `server/serverVariables.c` : Contains the web server's global variables.
+* `server/serverHelperFunctions.h` : Contains the various helper functions that the main source file of the web server will call.
+* `server/interuptHandler.h` : Contains code to handle interupts.
+* `server/serverVariables.h` : Contains the web server's global variables.
 * `server/htmlFiles/` : Contains dummy HTML files to demonstrate how the multi-threaded web server works.
 
 * `load_generator/load_generator.c` : Main source file containing the code for the load testing of the web server.
 * `load_generator/load_generator_script.py` : Python script to plot the desired graph by using the load_generator executable.
-* `load_generator/loadGenHelperFunctions.c` : Contains the various helper functions that the main source file of the load-tester will call.
-* `load_generator/loadGenVariables.c` : Contains the load tester's global variables.
+* `load_generator/loadGenHelperFunctions.h` : Contains the various helper functions that the main source file of the load-tester will call.
+* `load_generator/loadGenVariables.h` : Contains the load tester's global variables.
 
 
 Compilation and Usage
