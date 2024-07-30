@@ -55,8 +55,10 @@ After starting this, you can go to `127.0.0.1:8000` to check if your web server 
 make
 ```
 ```
-python3 load_generator_script.py 8001     # 8001 is the port number on which the web server is running.
+python3 load_generator_script.py 8001     
 ```
+(8001 is the port number on which the web server is running.)
+
 This will run the load_generator.c and will plot the desired graph.
 
 3. Clean Object files:
